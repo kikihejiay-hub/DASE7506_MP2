@@ -1,0 +1,58 @@
+{
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "method": "answer-group pairwise ensemble with consensus and exact templates",
+  "seeded_models": {
+    "meanstd_mlp": {
+      "hidden_units": 32,
+      "alpha": 0.3,
+      "seed": 432
+    },
+    "mean_mlp": {
+      "hidden_units": 128,
+      "alpha": 1.0,
+      "seed": 428
+    },
+    "polynomial_logistic": {
+      "degree": 3,
+      "components": 4096,
+      "C": 0.3,
+      "seed": 10
+    }
+  },
+  "fusion_weights": [0.6, 0.9, 1.2],
+  "results": [
+    {
+      "name": "consensus_baseline",
+      "split": "validation",
+      "correct": 688,
+      "n": 798,
+      "accuracy": 86.2155388471178,
+      "prediction_seconds": 0.168038100004196
+    },
+    {
+      "name": "final_ensemble",
+      "split": "validation",
+      "correct": 762,
+      "n": 798,
+      "accuracy": 95.48872180451127,
+      "prediction_seconds": 2.4393783998675644
+    },
+    {
+      "name": "final_ensemble_hard_validation",
+      "split": "validation_hard_subset",
+      "correct": 319,
+      "n": 355,
+      "accuracy": 89.85915492957747
+    },
+    {
+      "name": "final_frozen_ensemble",
+      "split": "test",
+      "correct": 381,
+      "n": 467,
+      "accuracy": 81.5845824411135,
+      "prediction_seconds": 2.33340979996137
+    }
+  ],
+  "test_usage": "single frozen evaluation; not used for training or selection"
+}
+
