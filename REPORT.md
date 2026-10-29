@@ -1,8 +1,8 @@
 # Selecting Reliable LLM Reasoning by Answer-Group Ranking
 
 **DASE7506 Advanced Machine Learning Methods - MP2**  
-**Name:** [YOUR NAME]  
-**Student ID:** [YOUR STUDENT ID]  
+**Name:** He Jiayin  
+**Student ID:** 3036705993 
 **Protocol:** dase7506-mp2-open-hard-verifier-v5
 
 ## Abstract
